@@ -46,7 +46,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     grid-gap: 2rem;
-    top: -5rem;
+    top: 0rem;
     position: relative;
 }
 

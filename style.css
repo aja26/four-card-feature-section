@@ -47,6 +47,7 @@ main{
     place-items: center;
     grid-gap: 2rem;
     top: 0rem;
+    margin-top: 2rem;
     position: relative;
 }
 

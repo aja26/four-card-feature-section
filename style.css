@@ -139,7 +139,7 @@ p{
 
     .container .columns{
         grid-template-columns: 1fr;
-        top: 8rem;
+        top: 2rem;
     }
 
     header p{

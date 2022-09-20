@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    /* ### Primary */
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    
+    /* ### Neutral */
+    
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --grayish-blue-rgba: rgba(163, 165, 174, 0.4);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    background-color: var(--very-light-gray);
+}
+
+main{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    width: 80vw;
+    height: 100vh;
+    justify-items: center;
+}
+
+.container .columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap: 2rem;
+    top: -5rem;
+    position: relative;
+}
+
+.columns{
+    margin-top: -5rem;
+    margin-bottom: 10rem;
+}
+
+.box{
+    background-color: #fff;
+    height: 260px;
+    width: 26vw;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: left;
+    box-shadow: 0px 10px 20px var(--grayish-blue-rgba);
+    position: relative;
+}
+
+.box img{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.box1{
+    border-top: 3px solid var(--cyan);
+}
+
+.box2{
+    border-top: 3px solid var(--red);
+    margin-bottom: 1.5rem;
+}
+
+.box3{
+    border-top: 3px solid var(--orange);
+}
+
+.box4{
+    border-top: 3px solid var(--blue);
+}
+
+h1{
+   color: var(--very-dark-blue);
+   font-weight: 200;
+}
+
+h2{
+    color: var(--very-dark-blue);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+h1 span{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+header{
+    margin-top: 4rem;
+}
+
+header p{
+    width: 500px;
+}
+
+p{
+    color: var(--grayish-blue);
+    line-height: 1.65rem;
+}
+
+.box p{
+    font-size: 15px;
+}
+
+@media (min-width:1600px){
+    .box{
+        width: 420px;
+    }    
+}    
+
+@media (max-width:1100px){
+ 
+    .container{
+        width: 100vw;
+        height: auto;
+    }
+
+    .container .columns{
+        grid-template-columns: 1fr;
+        top: 8rem;
+    }
+
+    header p{
+        width: 390px;
+    }
+
+    .box{
+        width: 350px;
+    } 
+}
